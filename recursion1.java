@@ -8,11 +8,30 @@ public class recursion1 {
 
 
 
-        System.out.println("infinite recursion");
-        infiniteRecursion(1);
+        numrecursion(number,number);
     }
-    public static void infiniteRecursion(int num){
-        System.out.println(num);
-        infiniteRecursion(num+1);
+    // public static void infiniteRecursion(int num){
+    //     System.out.println(num);
+    //     infiniteRecursion(num+1);
+    // }
+    public static void printstarrecursion(int num){
+        if (num == 0){
+            return;
+        }
+        else{
+            System.out.println(num);
+            printstarrecursion(num-1);
+            System.out.println(num);            
+        }
+    }
+    public static void numrecursion(int n, int i ){
+        if(i == 0){
+            return;
+        }
+        else{
+            System.out.println(n-i+1);
+            numrecursion(n,i-1);
+            System.out.println(n-i+1);
+        }
     }
 }
