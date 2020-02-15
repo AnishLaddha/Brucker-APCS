@@ -6,7 +6,7 @@ public class gcdrecursion{
         int first = console.nextInt();
         System.out.print("Enter an integer: ");
         int second = console.nextInt();
-        System.out.println(gcd(first,second));
+        System.out.println("GCD = "+gcd(first,second));
     }
     public static int gcd(int num1, int num2){
         if (num2 == 0 ){
