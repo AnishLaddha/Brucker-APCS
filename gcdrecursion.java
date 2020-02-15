@@ -3,9 +3,9 @@ public class gcdrecursion{
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        int first = console.nextInt();
+        int first = Math.abs(console.nextInt());
         System.out.print("Enter an integer: ");
-        int second = console.nextInt();
+        int second = Math.abs(console.nextInt());
         System.out.println("GCD = "+gcd(first,second));
     }
     public static int gcd(int num1, int num2){
