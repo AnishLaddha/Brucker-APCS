@@ -2,15 +2,16 @@ import java.util.*;
 public class AddElements{
 	public static void main(String Args[]){
 		Scanner console = new Scanner(System.in);
-		System.out.print("Enter size of integer array: ");
+		System.out.println("Enter size of integer array: ");
 		int size = console.nextInt();
 		int[] list = new int[size]; 
 		int hold;
+		System.out.println("Enter n integers separated by spaces: ");
 		for(int i = 0; i < size; i++){
 			hold = console.nextInt();
 			list[i] = hold;
 		}
-		System.out.println(helper(list));
+		System.out.println("The sum of the elements in your list: "+helper(list));
 	}
 
 	public static int helper(int[] list){
