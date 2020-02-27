@@ -16,8 +16,9 @@ public class backtrackrec{
         }
         else if(currx <= targetx && curry <= targety){
             explore(targetx, targety, currx, curry+1, path+" N");
-            explore(targetx, targety, currx+1, curry, path+" E");
             explore(targetx, targety, currx+1, curry+1, path+" NE");
+            explore(targetx, targety, currx+1, curry, path+" E");
+            
         }
     }
 }
