@@ -7,7 +7,7 @@ public class backtrackrec{
         int x = console.nextInt();
         int y = console.nextInt();
         explore(x,y,0,0,"");
-        System.out.println(count);
+        System.out.println("Number of paths = "+count);
     }
     private static void explore(int targetx, int targety, int currx, int curry, String path){
         if(currx == targetx && curry == targety){
